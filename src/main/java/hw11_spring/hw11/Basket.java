@@ -12,17 +12,14 @@ import java.util.List;
 @SessionScope
 public class Basket {
     private List<Integer> id;
-//    public void setId(List<Integer> id){
-//        this.id = id;
-//    }
     public Basket(){
         List<Integer> id = new ArrayList<Integer>();
+    }
+    public void setId(List<Integer> id){
+        this.id = id;
     }
     public List<Integer> getId() {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = Collections.singletonList(id);
-    }
 }

@@ -10,12 +10,12 @@ import java.util.List;
 @RestController
 public class BasketController {
     BasketService basketService = new BasketService();
-    @RequestMapping("/add")
+    @RequestMapping("/store/order/add")
     public String add(@RequestParam("id") List<Integer> id){
         basketService.add(id);
         return id.toString();
     }
-    @RequestMapping("/get")
+    @RequestMapping("/store/order/get")
     public String get(){
         return basketService.get().toString();
 //        return ("not founded");

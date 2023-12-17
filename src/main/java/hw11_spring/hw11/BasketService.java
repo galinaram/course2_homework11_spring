@@ -7,9 +7,6 @@ import java.util.List;
 @Service
 public class BasketService {
     Basket basket = new Basket();
-//    public void add(List<Integer> id) {
-//        id.forEach(basket::setId);
-//    }
     public void add (List<Integer> id){
         basket.getId().addAll(id);
     }
