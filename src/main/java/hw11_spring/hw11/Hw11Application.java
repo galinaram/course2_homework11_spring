@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Hw11Application {
 
 	public static void main(String[] args) {
-//		System.setProperty("server.servlet.context-path", "/store/order/");
+		System.setProperty("server.servlet.context-path", "/store/order/");
 		SpringApplication.run(Hw11Application.class, args);
 	}
 

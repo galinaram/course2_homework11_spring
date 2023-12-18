@@ -15,12 +15,12 @@ public class BasketController {
         this.basketService = basketService;
     }
 
-    @RequestMapping("/store/order/add")
+    @RequestMapping("/add")
     public String add(@RequestParam("id") List<Integer> id){
         basketService.add(id);
         return id.toString();
     }
-    @RequestMapping("/store/order/get")
+    @RequestMapping("/get")
     public String get(){
         return basketService.get().toString();
 //        return ("not founded");

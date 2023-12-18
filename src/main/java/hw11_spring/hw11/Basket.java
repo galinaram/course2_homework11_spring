@@ -11,10 +11,7 @@ import java.util.List;
 @Component
 @SessionScope
 public class Basket {
-    private List<Integer> id;
-    public Basket(){
-        List<Integer> id = new ArrayList<Integer>();
-    }
+    private List<Integer> id = new ArrayList<Integer>();
     public void setId(List<Integer> id){
         this.id = id;
     }
