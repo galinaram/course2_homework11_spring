@@ -9,7 +9,12 @@ import java.util.List;
 
 @RestController
 public class BasketController {
-    BasketService basketService = new BasketService();
+    private final BasketService basketService;
+
+    public BasketController(BasketService basketService) {
+        this.basketService = basketService;
+    }
+
     @RequestMapping("/store/order/add")
     public String add(@RequestParam("id") List<Integer> id){
         basketService.add(id);
